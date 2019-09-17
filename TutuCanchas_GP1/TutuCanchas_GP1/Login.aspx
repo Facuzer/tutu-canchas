@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="col-sm-4 text-center">
-                        <asp:Button ID="btIniciar" runat="server" Text="Iniciar Sesión" class="btn btn-primary btn-lg" OnClick="btIniciarSesion_Click" />
+                        <asp:Button ID="btIniciar" runat="server" Text="Iniciar Sesión" class="btn btn-primary btn-lg" OnClick="btIniciarSesion_Click" Font-Bold="true" Width="210px" />
                     </div>
 
                     <div class="col-md-4">
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="col-sm-4 text-center">
-                        <asp:Button ID="Button2" runat="server" Text="Crear Usuario" class="btn btn-primary btn-lg" OnClick="btNuevoUsuario_Click" />
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="true" OnDataBinding="HyperLink1_DataBinding">¿No tienes un usuario?</asp:HyperLink>
                     </div>
 
                     <div class="col-md-4">

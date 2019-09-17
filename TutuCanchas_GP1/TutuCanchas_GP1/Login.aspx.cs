@@ -40,5 +40,10 @@ namespace TutuCanchas_GP1
                 lbMsg.Text = ex.Message;
             }
         }
+
+        protected void HyperLink1_DataBinding(object sender, EventArgs e)
+        {
+
+        }
     }
 }
