@@ -91,6 +91,19 @@
                     </div>
 
                 </div>
+                 <div class="row">
+
+                    <div class="col-md-4">
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <asp:Button ID="Button2" runat="server" Text="Crear Usuario" class="btn btn-primary btn-lg" OnClick="btNuevoUsuario_Click" />
+                    </div>
+
+                    <div class="col-md-4">
+                    </div>
+
+                </div>
                 <div class="row">
 
                     <div class="col-md-4">
