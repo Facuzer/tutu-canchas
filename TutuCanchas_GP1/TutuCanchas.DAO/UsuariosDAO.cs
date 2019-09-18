@@ -42,5 +42,19 @@ namespace TutuCanchas.DAO
 
             return lista;
         }
+
+        public static void Alta(UsuariosDTO user)
+        {
+            string cmdText = "INSERT INTO (Id, Nombre, Contraseña, Perfil, Email, Telefono) " +
+                             "VALUES([Id], '[Nombre]', '[Contraseña]', '[Perfil]', '[Email]', '[Telefono]')";
+            cmdText.Replace("[Id]", DAOHelper.GetNextId("Usuarios").ToString());
+            cmdText.Replace("[Nombre]", user.Nombre);
+            cmdText.Replace("[Contraseña]", user.Contraseña);
+            cmdText.Replace("[Prefil]", user.Perfil);
+            cmdText.Replace("[Email]", user.Email);
+            cmdText.Replace("[Telefono]", user.Telefono);
+
+            DAOHelper.EjecutarComando(cmdText);
+        }
     }
 }

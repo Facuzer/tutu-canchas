@@ -20,5 +20,30 @@ namespace TutuCanchas.Business
 
             return null;
         }
+        /// <summary>
+        /// Función que da de alta un usuario
+        /// </summary>
+        /// <param name="user">Un dto de usuario lleno</param>
+        /// <returns>Devuelve true si se pudo hacer y false si hubo errores de validación.</returns>
+        public static bool RegistrarUsuario(UsuariosDTO user)
+        {
+            // Validaciones
+            if (user.Nombre.Length > 50) return false;
+            if (user.Contraseña.Length > 50) return false;
+            if (user.Email.Length > 50) return false;
+            if (user.Perfil.Length > 50) return false;
+            if (user.Telefono.Length > 50) return false;
+            // Todo ok
+            try
+            {
+                DAO.UsuariosDAO.Alta(user);
+                return true;
+            }
+            catch
+            {
+                // Hubo error
+                return false;
+            }
+        }
     }
 }

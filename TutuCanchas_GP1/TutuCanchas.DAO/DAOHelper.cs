@@ -30,5 +30,23 @@ namespace TutuCanchas.DAO
                 }
             }
         }
+
+        internal static void EjecutarComando(string cmdText)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                if (conn.State != ConnectionState.Open)
+                    conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = cmdText;
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
+
 }
