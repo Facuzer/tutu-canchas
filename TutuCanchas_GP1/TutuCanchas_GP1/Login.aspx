@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="col-sm-4 text-center">
-                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="true" OnDataBinding="HyperLink1_DataBinding">¿No tienes un usuario?</asp:HyperLink>
+                        <a href="Registro.aspx">¿No tienes un usuario?</a>      
                     </div>
 
                     <div class="col-md-4">

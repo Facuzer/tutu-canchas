@@ -55,3 +55,10 @@ C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\
 C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.csproj.CopyComplete
 C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.dll
 C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DAO.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DAO.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DTO.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DTO.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.csprojResolveAssemblyReference.cache
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.pdb

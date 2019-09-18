@@ -69,3 +69,12 @@ C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\D
 C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.csproj.CopyComplete
 C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.dll
 C:\Users\valen\vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.Business.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.Business.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DAO.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DTO.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DAO.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DTO.pdb
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.csprojResolveAssemblyReference.cache
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.dll
+C:\Users\huergo\Desktop\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.pdb
