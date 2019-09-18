@@ -45,16 +45,22 @@ namespace TutuCanchas.DAO
 
         public static void Alta(UsuariosDTO user)
         {
-            string cmdText = "INSERT INTO (Id, Nombre, Contraseña, Perfil, Email, Telefono) " +
-                             "VALUES([Id], '[Nombre]', '[Contraseña]', '[Perfil]', '[Email]', '[Telefono]')";
-            cmdText.Replace("[Id]", DAOHelper.GetNextId("Usuarios").ToString());
-            cmdText.Replace("[Nombre]", user.Nombre);
-            cmdText.Replace("[Contraseña]", user.Contraseña);
-            cmdText.Replace("[Prefil]", user.Perfil);
-            cmdText.Replace("[Email]", user.Email);
-            cmdText.Replace("[Telefono]", user.Telefono);
+            string cmdText = "INSERT INTO Usuarios(Id, Nombre, Contraseña, Perfil, Email, Telefono) " +
+                             "VALUES("+ DAOHelper.GetNextId("Usuarios").ToString() +", '" + user.Nombre +"', '" + user.Contraseña + "', '" + user.Perfil + "', '" + user.Email + "', '" + user.Telefono + "')";
 
             DAOHelper.EjecutarComando(cmdText);
+        }
+
+        public static bool UserExist(string user)
+        {
+            if (ReadAll("WHERE Nombre='"+ user +"'").Count > 0) return true;
+            return false;
+        }
+
+        public static bool EmailExist(string email)
+        {
+            if (ReadAll("WHERE Email='" + email + "'").Count > 0) return true;
+            return false;
         }
     }
 }

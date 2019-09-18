@@ -12,34 +12,34 @@
                         <div class="row">
                             <asp:Label ID="Label1" runat="server" Text="Usuario:" Font-Underline="true" Font-Bold="true"></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                            <asp:TextBox ID="TextBox1" runat="server" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtUsuario" runat="server" Width="100%"></asp:TextBox>
                         </div>
                         <br />
                         <div class="row">
                             <asp:Label ID="Label2" runat="server" Text="Contraseña:" Font-Underline="true" Font-Bold="true"></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                            <asp:TextBox ID="TextBox2" runat="server" Width="100%" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox ID="txtContraseña" runat="server" Width="100%" TextMode="Password"></asp:TextBox>
                         </div>
                         <br />
                         <div class="row">
                             <asp:Label ID="Label3" runat="server" Text="Perfil:" Font-Underline="true" Font-Bold="true"></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:TextBox ID="TextBox3" runat="server" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtPerfil" runat="server" Width="100%"></asp:TextBox>
                         </div>
                         <br />
                         <div class="row">
                             <asp:Label ID="Label4" runat="server" Text="Email:" Font-Underline="true" Font-Bold="true"></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                            <asp:TextBox ID="TextBox4" runat="server" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" runat="server" Width="100%"></asp:TextBox>
                         </div>
                         <br />
                         <div class="row">
                             <asp:Label ID="Label5" runat="server" Text="Telefono:" Font-Underline="true" Font-Bold="true"></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                            <asp:TextBox ID="TextBox5" runat="server" Width="100%" TextMode="Number"></asp:TextBox>
+                            <asp:TextBox ID="txtTelefono" runat="server" Width="100%" TextMode="Number"></asp:TextBox>
                         </div>
                         <div class="col-md-2">
-                            <asp:Button ID="btregistrar" runat="server" Text="Registrar" class="btn btn-primary btn-lg" OnClick="Button1_Click" Width="200px" />
+                            <asp:Button ID="cmdRegistrar" runat="server" Text="Registrar" class="btn btn-primary btn-lg" OnClick="Button1_Click" Width="200px" />
                         </div>
                 </div>
             </div>

@@ -25,24 +25,28 @@ namespace TutuCanchas.Business
         /// </summary>
         /// <param name="user">Un dto de usuario lleno</param>
         /// <returns>Devuelve true si se pudo hacer y false si hubo errores de validación.</returns>
-        public static bool RegistrarUsuario(UsuariosDTO user)
+        public static string RegistrarUsuario(UsuariosDTO user)
         {
             // Validaciones
-            if (user.Nombre.Length > 50) return false;
-            if (user.Contraseña.Length > 50) return false;
-            if (user.Email.Length > 50) return false;
-            if (user.Perfil.Length > 50) return false;
-            if (user.Telefono.Length > 50) return false;
+            //lenght
+            if (user.Nombre.Length > 50) return "El usuario es demasiado largo(50 caracteres max)";
+            if (user.Contraseña.Length > 50) return "La contraseña es demasiado largo(50 caracteres max)";
+            if (user.Email.Length > 50) return "El email es demasiado largo(50 caracteres max)";
+            if (user.Perfil.Length > 50) return "El perfil es demasiado largo(50 caracteres max)";
+            if (user.Telefono.Length > 50) return "El telefono es demasiado largo(50 caracteres max)";
+            //repeticion
+            if (DAO.UsuariosDAO.UserExist(user.Nombre)) return "El nombre de usuario ya existe.";
+            if (DAO.UsuariosDAO.EmailExist(user.Email)) return "El email ya esta en uso.";
             // Todo ok
             try
             {
                 DAO.UsuariosDAO.Alta(user);
-                return true;
+                return "";
             }
             catch
             {
                 // Hubo error
-                return false;
+                return "No se que paso";
             }
         }
     }

@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using TutuCanchas.DTO;
 
 namespace TutuCanchas.DAO
 {
@@ -31,6 +32,7 @@ namespace TutuCanchas.DAO
             }
         }
 
+    
         internal static void EjecutarComando(string cmdText)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -47,6 +49,7 @@ namespace TutuCanchas.DAO
                 }
             }
         }
+
     }
 
 }
