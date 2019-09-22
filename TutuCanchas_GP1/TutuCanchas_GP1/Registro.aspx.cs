@@ -29,6 +29,7 @@ namespace TutuCanchas_GP1
             {
                 // Registro correcto
                 Response.Write("<script LANGUAGE='JavaScript' >alert('Registro exitoso')</script>");
+                Response.Redirect("Login.aspx");
             }
             else
             {
