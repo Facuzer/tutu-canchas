@@ -7,25 +7,24 @@ using System.Data.SqlClient;
 
 namespace TutuCanchas.DAO
 {
-    public static class TipoCanchasDAO
+    public static class ClubesZonas
     {
-        public static Dictionary<Int32, String> GetAllTipoCanchas()
+        public static Dictionary<Int32, string> GetAllZonas()
         {
-            Dictionary<Int32,String> TipoCanchas = new Dictionary<Int32, string>();
-
+            var Zonas = new Dictionary<Int32, string>();
             DataTable dt = new DataTable();
             using (SqlDataAdapter da = new SqlDataAdapter(
-                "SELECT * FROM CanchasTipos",
+                "SELECT * FROM ClubesZonas",
                 DAOHelper.connectionString))
             {
                 da.Fill(dt);
             }
-            TipoCanchas.Add(0, "");
+            Zonas.Add(0, "");
             foreach (DataRow dr in dt.Rows)
             {
-                TipoCanchas.Add(Convert.ToInt32(dr["Id"]), Convert.ToString(dr["Nombre"]));
+                Zonas.Add(Convert.ToInt32(dr["Id"]), Convert.ToString(dr["Nombre"]));
             }
-            return TipoCanchas;
+            return Zonas;
         }
     }
 }

@@ -19,24 +19,32 @@ namespace TutuCanchas_GP1
             //Inicializo los controles.
             if (!Page.IsPostBack)
             {
+                // Lleno el horario
                 ddHorario.Items.Clear();
-                for (int i = 10; i < 20; i++)
-                {
-                    ddHorario.Items.Add("Horario: " + i.ToString());
-                }
-
-                ddTipoCancha.Items.Add("Futbol 5 - Sintetico");
-                ddTipoCancha.Items.Add("Futbol 5 - Cemento");
-                ddTipoCancha.Items.Add("Futbol 11 - Pasto");
-
+                ddHorario.DataSource = TutuCanchas.Business.CanchasHorarios.GetAllHorariosDesde();
+                ddHorario.DataTextField = "Display";
+                ddHorario.DataValueField = "Value";
+                ddHorario.DataBind();
+                // Lleno el tipo canchas
+                ddTipoCancha.Items.Clear();
+                ddTipoCancha.DataSource = TutuCanchas.Business.TipoCanchas.GetAllTipoCanchas();
+                ddTipoCancha.DataTextField = "Value";
+                ddTipoCancha.DataValueField = "Key";
+                ddTipoCancha.DataBind();
+                // Lleno las zonas
                 ddZonas.Items.Clear();
-                ddZonas.Items.Add("Zona 1");
-                ddZonas.Items.Add("Zona 2");
+                ddZonas.DataSource = TutuCanchas.Business.ClubesZonas.GetAllZonas();
+                ddZonas.DataTextField = "Value";
+                ddZonas.DataValueField = "Key";
+                ddZonas.DataBind();
             }
         }
 
         protected void btBuscar_Click(object sender, EventArgs e)
         {
+
+
+            Session.Add("Busqueda", );
             Response.Redirect("Canchas.aspx");
         }
     }
