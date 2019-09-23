@@ -1,8 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TutuCanchas_GP1.Registro" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TutuCanchas_GP1.Registro" %>
+<!DOCTYPE html>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Registro</title>
+
+</head>
     <body>
         <div class="container">
             <div class="row">
@@ -48,4 +51,5 @@
             </div>
         </div>
      </body>
-</asp:Content>
+
+</html>

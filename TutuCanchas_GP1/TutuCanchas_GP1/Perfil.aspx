@@ -5,14 +5,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <div class="container">
         <div class="col-md-4 ">
-            <asp:Image ID="ftoperfil" runat="server" Height="150px" />
-            <div class="row" style="float: right">
+            <asp:Image ID="ftoperfil" runat="server" Height="149px"  />
             <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
             <asp:Label ID="Label2" runat="server" Text="None"></asp:Label>
-                </div>
-                <div class="row">
-                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-                </div>
+            <div id="wea" style="float: right; padding: 15px;">
+                <asp:Label ID="Label3" runat="server" Text="Contraseña"></asp:Label>
+            </div>
+             
+                
+                
         </div>
     
     </div>
