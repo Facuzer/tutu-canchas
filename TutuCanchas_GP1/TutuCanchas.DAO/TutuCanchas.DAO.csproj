@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="CanchasHorariosDAO.cs" />
     <Compile Include="DAOHelper.cs" />
+    <Compile Include="TipoCanchasDAO.cs" />
     <Compile Include="UsuariosDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

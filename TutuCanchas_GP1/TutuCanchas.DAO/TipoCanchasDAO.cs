@@ -7,11 +7,11 @@ namespace TutuCanchas.DAO
 {
     public static class TipoCanchasDAO
     {
-        public static List<String> GetAllTipoCanchas()
+        public static Dictionary<Int32, String> GetAllTipoCanchas()
         {
             Dictionary<Int32,String> TipoCanchas = new Dictionary<Int32, string>();
 
-
+            return TipoCanchas;
         }
     }
 }
