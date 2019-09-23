@@ -7,7 +7,7 @@
      
 }
 span{
-    display:inline-block;
+    display: inline-flexbox;
     padding: 15px 30px
 
 }

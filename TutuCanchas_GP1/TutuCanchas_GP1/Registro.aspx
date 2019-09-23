@@ -1,13 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TutuCanchas_GP1.Registro" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TutuCanchas_GP1.Registro" %>
+<!DOCTYPE html>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Registro</title>
+
+</head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="width:auto; text-align:center">
-                    <h3 style="font-size: 20px; text-decoration: underline">Registro</h3>
+                    <h3 style="font-size: 20px; text-decoration: underline; font-size: 20px;">Registro</h3>
                     <br />
                         <div class="row">
                             <asp:Label ID="Label1" runat="server" Text="Usuario:" Font-Underline="true" Font-Bold="true"></asp:Label>
@@ -39,7 +42,8 @@
                             <asp:TextBox ID="txtTelefono" runat="server" Width="100%" TextMode="Number" ></asp:TextBox>
                         </div>
                         <div class="row"></div>
-                        <div class="col-md-2">
+                        <br />
+                        <div class="col-md-2" style="left: 450px" >
                             <asp:Button ID="cmdRegistrar" runat="server" Text="Registrar" class="btn btn-primary btn-lg" OnClick="Button1_Click" Width="200px"  />
                         </div>
                         <div class="row"></div>
@@ -47,4 +51,5 @@
             </div>
         </div>
      </body>
-</asp:Content>
+
+</html>
