@@ -58,13 +58,22 @@ namespace TutuCanchas_GP1 {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Control txPrecio.
+        /// Control txPreciomin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txPrecio;
+        protected global::System.Web.UI.WebControls.TextBox txPreciomin;
+        
+        /// <summary>
+        /// Control txtPreciomax.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPreciomax;
         
         /// <summary>
         /// Control Label4.
@@ -85,13 +94,22 @@ namespace TutuCanchas_GP1 {
         protected global::System.Web.UI.WebControls.DropDownList ddZonas;
         
         /// <summary>
-        /// Control lbMsg.
+        /// Control Label5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbMsg;
+        protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// Control Calendar1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
         /// Control btBuscar.

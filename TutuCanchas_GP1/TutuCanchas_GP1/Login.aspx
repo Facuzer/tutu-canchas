@@ -17,15 +17,15 @@
 
     <title>Tutu Canchas - Iniciar Sesión</title>
 </head>
-    <style>
-        h1{
-            text-align:center;
-        }
-        body{
-            background-color: forestgreen;
-            padding: 30px;
-        }
-    </style>
+<style>
+    h1{
+        text-align:center;
+    }
+    body{
+        background-color: forestgreen;
+        padding: 30px;
+    }
+</style>
 <body>
     <form id="form1" runat="server">
         <div>

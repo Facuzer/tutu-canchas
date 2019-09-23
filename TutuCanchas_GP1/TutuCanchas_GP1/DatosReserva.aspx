@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-12" style="width: 100%; text-align: center; top: 0px; left: 0px;">
+            <div class="col-md-4" style="width: 100%; text-align: center; top: 0px; left: 0px;">
 
                 <h3 style="font-size: 20px; text-decoration: underline; color: green">Datos de Reserva</h3>
 
@@ -36,7 +36,7 @@
 
                 <div class="row">
                     <div class="col-sm-4 text-center">
-                        <asp:Button ID="btnConfirm" runat="server" Height="26px" Text="Confirmar" class="btn btn-primary btn-lg" OnClick="btnConfirm_Click"  Width="100px" Font-Bold="true" BackColor="Green" />
+                        <asp:Button ID="btnConfirm" runat="server" Height="26px" Text="Confirmar" class="btn btn-primary btn-lg" OnClick="btnConfirm_Click"  Width="100px" Font-Bold="true" BackColor="YellowGreen" />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnBack" runat="server" Text="Volver" class="btn btn-primary btn-lg" OnClick="btnBack_Click" Height="27px" Width="100px" Font-Bold="true" />
                     </div>
