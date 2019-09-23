@@ -44,7 +44,17 @@ namespace TutuCanchas_GP1
         {
 
             // Response.Write("<script LANGUAGE='JavaScript' >alert('" + Calendar1.SelectedDate.Date.ToString("dd/MM/yyyy") +"')</script>");
-            // Session.Add("Busqueda", );
+            TutuCanchas.DTO.CanchasHorariosDTO busqueda = new TutuCanchas.DTO.CanchasHorariosDTO();
+            busqueda.HoraDesde = Convert.ToInt32(ddHorario.SelectedValue);
+            busqueda.IdCanchasTipos = Convert.ToInt32(ddTipoCancha.SelectedValue);
+            if (txPreciomin.Text == "") busqueda.PrecioDesde = 0;
+            else busqueda.PrecioDesde = Convert.ToInt32(txPreciomin.Text);
+            if (txtPreciomax.Text == "") busqueda.PrecioHasta = 0;
+            else busqueda.PrecioHasta = Convert.ToInt32(txtPreciomax.Text);
+            busqueda.IdClubesZonas = Convert.ToInt32(ddZonas.SelectedValue);
+            busqueda.Dia = Calendar1.SelectedDate;
+
+            Session.Add("Busqueda", TutuCanchas.Business.CanchasHorarios.Filtrar(busqueda));
             Response.Redirect("Canchas.aspx");
         }
     }

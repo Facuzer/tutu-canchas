@@ -14,8 +14,7 @@ namespace TutuCanchas.Business
 
         public static List<DTO.CanchasHorariosDTO> Filtrar(DTO.CanchasHorariosDTO busqueda)
         {
-
-            return null;
+            return DAO.CanchasHorariosDAO.Filtrar(busqueda);
         }
     }
 }

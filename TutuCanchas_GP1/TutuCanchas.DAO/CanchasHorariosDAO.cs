@@ -17,7 +17,7 @@ namespace TutuCanchas.DAO
 
             //Leo los registros de la DB.
             using (SqlDataAdapter da = new SqlDataAdapter(
-                "select CanchasHorarios.Id, CanchasHorarios.IdCancha, CanchasHorarios.HoraDesde, CanchasHorarios.HoraHasta, CanchasHorarios.Dia, CanchasHorarios.Precio, Canchas.IdCanchasTipos, Clubes.IdClubesZonas from CanchasHorarios inner join Canchas ON CanchasHorarios.Id = Canchas.Id inner join CanchasTipos ON Canchas.IdCanchasTipos = CanchasTipos.Id inner join Clubes ON Canchas.IdClub = Clubes.Id" + where,
+                "select CanchasHorarios.Id, CanchasHorarios.IdCancha, CanchasHorarios.HoraDesde, CanchasHorarios.HoraHasta, CanchasHorarios.Dia, CanchasHorarios.Precio, Canchas.IdCanchasTipos, Clubes.IdClubesZonas from CanchasHorarios inner join Canchas ON CanchasHorarios.Id = Canchas.Id inner join CanchasTipos ON Canchas.IdCanchasTipos = CanchasTipos.Id inner join Clubes ON Canchas.IdClub = Clubes.Id " + where,
                 DAOHelper.connectionString))
             {
                 da.Fill(dt);
@@ -137,12 +137,12 @@ namespace TutuCanchas.DAO
             }
             // Fecha
             if (!first) where = where + " AND ";
-            if (busqueda.Dia.Date.ToString() == "01/01/0001 12:00:00 a.m.")
+            if (busqueda.Dia.Date.ToString("dd/MM/yyyy") != "01/01/0001")
             {
                 where += "Dia=" + busqueda.Dia.Date.ToString("dd/MM/yyyy");
                 first = false;
             }
-
+            if (first) where = "";
             result = ReadAll(where);
             return result;
         }
