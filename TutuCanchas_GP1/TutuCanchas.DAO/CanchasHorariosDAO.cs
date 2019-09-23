@@ -17,7 +17,7 @@ namespace TutuCanchas.DAO
 
             //Leo los registros de la DB.
             using (SqlDataAdapter da = new SqlDataAdapter(
-                "select CanchasHorarios.Id, CanchasHorarios.IdCancha, CanchasHorarios.HoraDesde, CanchasHorarios.HoraHasta, CanchasHorarios.Dia, CanchasHorarios.Precio, Canchas.IdCanchasTipos from CanchasHorarios inner join Canchas ON CanchasHorarios.Id = Canchas.Id inner join CanchasTipos ON Canchas.IdCanchasTipos = CanchasTipos.Id" + where,
+                "select CanchasHorarios.Id, CanchasHorarios.IdCancha, CanchasHorarios.HoraDesde, CanchasHorarios.HoraHasta, CanchasHorarios.Dia, CanchasHorarios.Precio, Canchas.IdCanchasTipos, Clubes.IdClubesZonas from CanchasHorarios inner join Canchas ON CanchasHorarios.Id = Canchas.Id inner join CanchasTipos ON Canchas.IdCanchasTipos = CanchasTipos.Id inner join Clubes ON Canchas.IdClub = Clubes.Id" + where,
                 DAOHelper.connectionString))
             {
                 da.Fill(dt);
@@ -31,6 +31,8 @@ namespace TutuCanchas.DAO
                 canchaHorario.HoraHasta = Convert.ToInt32(dr["HoraHasta"]);
                 canchaHorario.Dia = Convert.ToDateTime(dr["Dia"]);
                 canchaHorario.Precio = Convert.ToInt32(dr["Precio"]);
+                canchaHorario.IdCanchasTipos = Convert.ToInt32(dr["IdCanchasTipos"]);
+                canchaHorario.IdClubesZonas = Convert.ToInt32(dr["IdClubesZonas"]);
                 canchas.Add(canchaHorario);
             }
 
@@ -101,17 +103,47 @@ namespace TutuCanchas.DAO
             // Horarios
             if (busqueda.HoraDesde != 0)
             {
-                where = "Horadesde=" + busqueda.HoraDesde;
+                where += "Horadesde=" + busqueda.HoraDesde;
                 first = false;
             }
             if (!first) where = where + " AND ";
             // Tipo de cancha
             if (busqueda.IdCanchasTipos != 0)
             {
-                where = "IdCanchasTipos=" +busqueda.IdCanchasTipos;
+                where += "IdCanchasTipos=" +busqueda.IdCanchasTipos;
+                first = false;
             }
             if (!first) where = where + " AND ";
+            // Precio
+            // Desde
+            if (busqueda.PrecioDesde != 0)
+            {
+                where += "Precio>=" + busqueda.PrecioDesde;
+                first = false;
+            }
+            if (!first) where = where + " AND ";
+            // Hasta
+            if (busqueda.PrecioHasta != 0)
+            {
+                where += "Precio<=" + busqueda.PrecioHasta;
+                first = false;
+            }
+            // Zonas
+            if (!first) where = where + " AND ";
+            if (busqueda.IdClubesZonas != 0)
+            {
+                where += "IdClubesZonas=" + busqueda.IdClubesZonas;
+                first = false;
+            }
+            // Fecha
+            if (!first) where = where + " AND ";
+            if (busqueda.Dia.Date.ToString() == "01/01/0001 12:00:00 a.m.")
+            {
+                where += "Dia=" + busqueda.Dia.Date.ToString("dd/MM/yyyy");
+                first = false;
+            }
 
+            result = ReadAll(where);
             return result;
         }
 

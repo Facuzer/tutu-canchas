@@ -14,7 +14,7 @@ namespace TutuCanchas.DTO
         public DateTime Dia{ get; set; }
         public int Precio { get; set; }
         public int IdCanchasTipos { get; set; }
-
+        public int IdClubesZonas { get; set; }
         // hice esto por si el chabon elije un rango de precios, pero sé que no está en la BDD
         public int PrecioDesde { get; set; }
         public int PrecioHasta { get; set; }

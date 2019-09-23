@@ -43,8 +43,8 @@ namespace TutuCanchas_GP1
         protected void btBuscar_Click(object sender, EventArgs e)
         {
 
-
-            Session.Add("Busqueda", );
+            // Response.Write("<script LANGUAGE='JavaScript' >alert('" + Calendar1.SelectedDate.Date.ToString("dd/MM/yyyy") +"')</script>");
+            // Session.Add("Busqueda", );
             Response.Redirect("Canchas.aspx");
         }
     }
