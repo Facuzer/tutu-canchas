@@ -13,7 +13,7 @@
                 <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="332px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
                     
                 <Columns>
-                    <asp:ButtonField ButtonType="Button" HeaderText="Elegir" Text="Detalles"  />
+                    <asp:ButtonField ButtonType="Button" HeaderText="Elegir" Text="Reservar"  />
                         </Columns>
                     
                 <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
