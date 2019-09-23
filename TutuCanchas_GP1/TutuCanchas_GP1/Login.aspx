@@ -17,6 +17,15 @@
 
     <title>Tutu Canchas - Iniciar Sesión</title>
 </head>
+    <style>
+        h1{
+            text-align:center;
+        }
+        body{
+            background-color: forestgreen;
+            padding: 30px;
+        }
+    </style>
 <body>
     <form id="form1" runat="server">
         <div>
@@ -40,7 +49,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h3>Iniciar Sesión</h3>
+                        <h1>Iniciar Sesión</h1>
                     </div>
 
                     <div class="col-md-4">

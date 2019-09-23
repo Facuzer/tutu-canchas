@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TutuCanchas_GP1.Registro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <body>
-
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="width:auto; text-align:center">
@@ -36,13 +36,15 @@
                         <div class="row">
                             <asp:Label ID="Label5" runat="server" Text="Telefono:" Font-Underline="true" Font-Bold="true"></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                            <asp:TextBox ID="txtTelefono" runat="server" Width="100%" TextMode="Number"></asp:TextBox>
+                            <asp:TextBox ID="txtTelefono" runat="server" Width="100%" TextMode="Number" ></asp:TextBox>
                         </div>
+                        <div class="row"></div>
                         <div class="col-md-2">
-                            <asp:Button ID="cmdRegistrar" runat="server" Text="Registrar" class="btn btn-primary btn-lg" OnClick="Button1_Click" Width="200px" />
+                            <asp:Button ID="cmdRegistrar" runat="server" Text="Registrar" class="btn btn-primary btn-lg" OnClick="Button1_Click" Width="200px"  />
                         </div>
+                        <div class="row"></div>
                 </div>
             </div>
         </div>
-    </body>
-    </asp:Content>
+     </body>
+</asp:Content>
