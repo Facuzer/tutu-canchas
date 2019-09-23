@@ -28,6 +28,11 @@ namespace TutuCanchas.Business
         public static string RegistrarUsuario(UsuariosDTO user)
         {
             // Validaciones
+            if (user.Nombre == "") return "El usuario es inválido.";
+            if (user.Contraseña.Length < 5) return "La contraseña es muy pequeña(5 caracteres min)";
+            if (user.Telefono == "") return "El teléfono está vacío.";
+            if (user.Perfil == "") return "El perfil está vacío.";
+            if (user.Email == "") return "El Email está vacío.";
             //lenght
             if (user.Nombre.Length > 50) return "El usuario es demasiado largo(50 caracteres max)";
             if (user.Contraseña.Length > 50) return "La contraseña es demasiado largo(50 caracteres max)";
@@ -38,6 +43,7 @@ namespace TutuCanchas.Business
             if (DAO.UsuariosDAO.UserExist(user.Nombre)) return "El nombre de usuario ya existe.";
             if (DAO.UsuariosDAO.EmailExist(user.Email)) return "El email ya esta en uso.";
             // Todo ok
+
             try
             {
                 DAO.UsuariosDAO.Alta(user);
