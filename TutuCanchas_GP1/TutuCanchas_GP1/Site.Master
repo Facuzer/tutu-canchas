@@ -47,6 +47,7 @@
                     <Items>
                         <asp:MenuItem Text="Mis Reservas" Value="Mis Reservas" NavigateUrl="~/Reserva.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Buscador" Value="Buscador" NavigateUrl="~/Buscador.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Perfil" Value="Perfil" NavigateUrl="~/Perfil.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Cerrar Sesion" Value="Cerrar Sesion" NavigateUrl="~/Login.aspx"></asp:MenuItem>
                     </Items>
                     <StaticHoverStyle BackColor="#666666" ForeColor="White" />
