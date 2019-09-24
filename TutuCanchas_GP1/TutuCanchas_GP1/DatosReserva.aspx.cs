@@ -11,7 +11,11 @@ namespace TutuCanchas_GP1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["DatosReserva"] == null) Response.Redirect("buscador.aspx");
+            else
+            {
+                TutuCanchas.DTO.ReservasDTO reserva = Session["DatosReserva"];
+            }
         }
     }
 }

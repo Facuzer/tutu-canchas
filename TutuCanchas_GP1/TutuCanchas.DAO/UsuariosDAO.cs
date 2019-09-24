@@ -62,5 +62,10 @@ namespace TutuCanchas.DAO
             if (ReadAll("WHERE Email='" + email + "'").Count > 0) return true;
             return false;
         }
+
+        public static int GetIdByUser(string user)
+        {
+            return ReadAll("WHERE Nombre=" + user)[0].Id;
+        }
     }
 }
