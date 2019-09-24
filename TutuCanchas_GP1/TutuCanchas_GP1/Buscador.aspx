@@ -19,8 +19,12 @@
                     <asp:DropDownList ID="ddTipoCancha" runat="server" class="custom-select d-block w-100" Width="100%"></asp:DropDownList>
                     <br />    
                     <asp:Label ID="Label3" runat="server" Text="Precio" Width="100%"></asp:Label>
-                    <span><asp:TextBox ID="txPreciomin" runat="server"  class="form-control text-xl-center" TextMode="Number" Width="100%" ></asp:TextBox></span>
+                    <div class="col-form-label">
+                    <span><asp:Label ID="Label6" runat="server" Text="Desde" Width="100%"></asp:Label></span>
+                    <span><asp:TextBox ID="txPreciomin" runat="server" class="form-control text-xl-center" TextMode="Number" Width="100%" ></asp:TextBox></span>
+                    <span><asp:Label ID="Label7" runat="server" Text="Hasta" Width="100%"></asp:Label></span>
                     <span><asp:TextBox ID="txtPreciomax" runat="server" class="form-control text-xl-center" TextMode="Number" Width="100%"></asp:TextBox></span>
+                    </div>
                     <br />
                     <asp:Label ID="Label4" runat="server" Text="Zonas"></asp:Label>
                     <asp:DropDownList ID="ddZonas" runat="server" class="custom-select d-block w-100" Width="100%" ></asp:DropDownList>
