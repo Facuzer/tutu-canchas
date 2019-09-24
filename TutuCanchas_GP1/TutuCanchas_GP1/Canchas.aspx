@@ -10,39 +10,36 @@
         <div class="row">
 
             <div class="col-md-12" style="width: 100%; text-align: center; top: 0px; left: 0px;">
-<<<<<<< HEAD
-                <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="500px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
+
+                <asp:Gridview ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="500px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
+                                
                     
-                <Columns>
-                    <asp:ButtonField CommandName="cmdResevar" ButtonType="Button" HeaderText="Elegir" Text="Reservar"  />
-=======
-                <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="539px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged" AutoGenerateColumns="False" OnRowCommand="gvCanchas_RowCommand1">
-                    
-                <Columns>
-                    <asp:BoundField DataField="Id" HeaderText="Id" />
-                    <asp:ButtonField ButtonType="Button" CommandName="cmdReservar" HeaderText="Elegir" Text="Reservar"  />
+                    <Columns>
+                        <asp:BoundField DataField="Id" HeaderText="Id" />
+                        <asp:ButtonField ButtonType="Button" CommandName="cmdReservar" HeaderText="Elegir" Text="Reservar" />
                         <asp:BoundField DataField="NombreCancha" HeaderText="Nombre cancha" />
-                    <asp:BoundField DataField="NombreClub" HeaderText="Nombre club" />
-                    <asp:BoundField DataField="Zona" HeaderText="Zona" />
-                    <asp:BoundField DataField="Direccion" HeaderText="Direccion" />
-                    <asp:BoundField DataField="Precio" DataFormatString="{0:c}" HeaderText="Precio" />
-                    <asp:BoundField DataField="Dia" DataFormatString="{0:MM/dd/yyyy}" HeaderText="Dia" />
-                    <asp:BoundField DataField="DisplayHoraDesde" HeaderText="Hora desde" />
-                    <asp:BoundField DataField="DisplayHoraHasta" HeaderText="Hora hasta" />
-                    <asp:BoundField DataField="CanchaTipo" HeaderText="Tipo de cancha" />
->>>>>>> 0eb7593fd572c526d399fa033db2459ee1dc6272
-                        </Columns>
-                    
-                <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
-                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
-                <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
-                <RowStyle BackColor="White" ForeColor="#330099" />
-                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
-                <SortedAscendingCellStyle BackColor="#FEFCEB" />
-                <SortedAscendingHeaderStyle BackColor="#AF0101" />
-                <SortedDescendingCellStyle BackColor="#F6F0C0" />
-                <SortedDescendingHeaderStyle BackColor="#7E0000" />
-            </asp:GridView>
+                        <asp:BoundField DataField="NombreClub" HeaderText="Nombre club" />
+                        <asp:BoundField DataField="Zona" HeaderText="Zona" />
+                        <asp:BoundField DataField="Direccion" HeaderText="Direccion" />
+                        <asp:BoundField DataField="Precio" DataFormatString="{0:c}" HeaderText="Precio" />
+                        <asp:BoundField DataField="Dia" DataFormatString="{0:MM/dd/yyyy}" HeaderText="Dia" />
+                        <asp:BoundField DataField="DisplayHoraDesde" HeaderText="Hora desde" />
+                        <asp:BoundField DataField="DisplayHoraHasta" HeaderText="Hora hasta" />
+                        <asp:BoundField DataField="CanchaTipo" HeaderText="Tipo de cancha" />
+
+                    </Columns>
+                        
+                    <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
+                    <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                    <RowStyle BackColor="White" ForeColor="#330099" />
+                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                    <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                    <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                    <SortedDescendingHeaderStyle BackColor="#7E0000" />
+                    <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                </asp:Gridview>
+            
 
             </div>
         </div>

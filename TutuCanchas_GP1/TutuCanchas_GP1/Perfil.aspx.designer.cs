@@ -22,22 +22,22 @@ namespace TutuCanchas_GP1 {
         protected global::System.Web.UI.WebControls.Image ftoperfil;
         
         /// <summary>
-        /// Control nomber.
+        /// Control nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label nomber;
+        protected global::System.Web.UI.WebControls.Label nombre;
         
         /// <summary>
-        /// Control Label2.
+        /// Control datonombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label datonombre;
         
         /// <summary>
         /// Control Label3.
