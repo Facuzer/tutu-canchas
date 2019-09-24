@@ -8,7 +8,44 @@
      
 }
 span{
-    display: inline-flexbox;
-    padding: 15px 30px
+    display: inline-block;
+    padding: 15px 30px;
+    margin-left: 0px;
+}
+#nombre{
+    float:left
 
+}
+#text {
+    width: 123px;
+    top: 1px;
+    left: 1px;
+}
+#ftoperfil{
+    float:left;
+    margin-top: 0px;
+}
+#box {
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Cooper;
+}
+#box:after{
+    content: ".";
+    visibility:hidden;
+    height:0;
+    clear:both;
+    display:inline-block
+}
+#Label3{
+    left: 20px;
+    margin-left: 17px;
+}
+#email{
+    padding-top: 17px;
+    margin-left: 1px
+}
+#telefono {
+    padding-top: 17px;
+    margin-left: 1px
 }
