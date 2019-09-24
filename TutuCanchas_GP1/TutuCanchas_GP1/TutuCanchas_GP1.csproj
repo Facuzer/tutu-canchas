@@ -65,6 +65,7 @@
     <Content Include="DatosReserva.aspx" />
     <Content Include="img\logo.jpg" />
     <Content Include="img\Pelota.png" />
+    <Content Include="img\perfil.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="Registro.aspx" />

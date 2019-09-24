@@ -22,8 +22,9 @@
         text-align:center;
     }
     body{
-        background-color: forestgreen;
+        background-color: #8e44ad;
         padding: 30px;
+        font-family:Cooper;
     }
 </style>
 <body>

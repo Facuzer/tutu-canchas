@@ -10,10 +10,10 @@
         <div class="row">
 
             <div class="col-md-12" style="width: 100%; text-align: center; top: 0px; left: 0px;">
-                <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="332px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
+                <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="500px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
                     
                 <Columns>
-                    <asp:ButtonField ButtonType="Button" HeaderText="Elegir" Text="Reservar"  />
+                    <asp:ButtonField CommandName="cmdResevar" ButtonType="Button" HeaderText="Elegir" Text="Reservar"  />
                         </Columns>
                     
                 <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />

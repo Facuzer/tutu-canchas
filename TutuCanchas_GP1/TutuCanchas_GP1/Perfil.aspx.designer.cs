@@ -10,7 +10,7 @@
 namespace TutuCanchas_GP1 {
     
     
-    public partial class Buscador {
+    public partial class Perfil {
         
         /// <summary>
         /// Control ftoperfil.
@@ -38,14 +38,5 @@ namespace TutuCanchas_GP1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Control Label3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
     }
 }

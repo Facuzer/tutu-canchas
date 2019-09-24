@@ -32,8 +32,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div style="display: inline; background-color: #9ACD32">
-                <div style="width: 100%; background-color: #9ACD32">
+            <div style="display: inline; background-color: #3498db">
+                <div style="width: 100%; background-color: #3498db">
                     <asp:Image ID="Image1" runat="server" ImageUrl="~/img/Pelota.png" Width="50px" style="margin: 10px" />
                     <asp:Label ID="lbTitulo" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Tutu Canchas - Grupo Messi"></asp:Label>
                 </div>

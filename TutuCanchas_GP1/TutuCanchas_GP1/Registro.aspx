@@ -3,14 +3,25 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Registro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+    <link href="~/css/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/pelotita.png" type="image/png" sizes="32x32"/>
+    <link rel="icon" href="img/pelotita.png" type="image/png" sizes="32x32"/>
+    <title>Tutu Canchas - Registro</title>
 
 </head>
     <body>
+        <form id="form1" runat="server">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="width:auto; text-align:center">
-                    <h3 style="font-size: 20px; text-decoration: underline; font-size: 20px;">Registro</h3>
+                    <h3 style="font-size: 20px; text-decoration: underline; font-family:Cooper;">Registro</h3>
                     <br />
                         <div class="row">
                             <asp:Label ID="Label1" runat="server" Text="Usuario:" Font-Underline="true" Font-Bold="true"></asp:Label>
@@ -50,6 +61,7 @@
                 </div>
             </div>
         </div>
+        </form>
      </body>
 
 </html>

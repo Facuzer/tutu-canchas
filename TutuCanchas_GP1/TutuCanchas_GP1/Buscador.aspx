@@ -7,7 +7,7 @@
         <br />
         <div class="container">
             <div class="row" style="width:100%; text-align:center;">
-                <div class="col-md-4" style="border-width:2px; border-color:black; border-style:solid; width : auto; text-align: center; top: 0px; left: 300px;">
+                <div class="col-md-12 text-center" style="border-width:2px; border-color:black; border-style:solid; width : auto; text-align: center;">
 
                     <h3 style="font-size: 20px; text-decoration: underline">Buscador</h3>
 
@@ -25,7 +25,7 @@
                     <asp:Label ID="Label4" runat="server" Text="Zonas"></asp:Label>
                     <asp:DropDownList ID="ddZonas" runat="server" class="custom-select d-block w-100" Width="100%" ></asp:DropDownList>
                     <br />
-                    <div class="col-md-4" style=" width: 100%; text-align:center; left: 50px ">
+                    <div class="col-md-12 text-center" style=" width: 100%;">
                             <asp:Label ID="Label5" runat="server"  Text="Fecha"></asp:Label>
                             <br />
                             <asp:Calendar ID="Calendar1" runat="server" Width="100%" ></asp:Calendar>

@@ -1,9 +1,10 @@
 ﻿body {
-    background-color: forestgreen;
+    background-color:#8e44ad;
     border-color: black;
     border-width: 1px;
     border-style: solid;
     width: 100%;
+    font-family:Cooper;
      
 }
 span{
