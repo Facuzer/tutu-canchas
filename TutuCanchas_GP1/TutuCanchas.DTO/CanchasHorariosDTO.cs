@@ -18,5 +18,14 @@ namespace TutuCanchas.DTO
         // hice esto por si el chabon elije un rango de precios, pero sé que no está en la BDD
         public int PrecioDesde { get; set; }
         public int PrecioHasta { get; set; }
+        // Esto de aca es para mostrar al usuario
+        public string NombreCancha { get; set; }
+        public string NombreClub { get; set; }
+        public string Direccion { get; set; }
+        public string Zona { get; set; }
+        public string CanchaTipo { get; set; }
+        public string displayHoraDesde { get; set; }
+
+        public string displayHoraHasta { get; set; }
     }
 }

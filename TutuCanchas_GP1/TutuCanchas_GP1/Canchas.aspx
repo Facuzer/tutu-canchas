@@ -10,10 +10,20 @@
         <div class="row">
 
             <div class="col-md-12" style="width: 100%; text-align: center; top: 0px; left: 0px;">
-                <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="332px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
+                <asp:GridView ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="539px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged" AutoGenerateColumns="False" OnRowCommand="gvCanchas_RowCommand1">
                     
                 <Columns>
-                    <asp:ButtonField ButtonType="Button" HeaderText="Elegir" Text="Reservar"  />
+                    <asp:BoundField DataField="Id" HeaderText="Id" />
+                    <asp:ButtonField ButtonType="Button" CommandName="cmdReservar" HeaderText="Elegir" Text="Reservar"  />
+                        <asp:BoundField DataField="NombreCancha" HeaderText="Nombre cancha" />
+                    <asp:BoundField DataField="NombreClub" HeaderText="Nombre club" />
+                    <asp:BoundField DataField="Zona" HeaderText="Zona" />
+                    <asp:BoundField DataField="Direccion" HeaderText="Direccion" />
+                    <asp:BoundField DataField="Precio" DataFormatString="{0:c}" HeaderText="Precio" />
+                    <asp:BoundField DataField="Dia" DataFormatString="{0:MM/dd/yyyy}" HeaderText="Dia" />
+                    <asp:BoundField DataField="DisplayHoraDesde" HeaderText="Hora desde" />
+                    <asp:BoundField DataField="DisplayHoraHasta" HeaderText="Hora hasta" />
+                    <asp:BoundField DataField="CanchaTipo" HeaderText="Tipo de cancha" />
                         </Columns>
                     
                 <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />

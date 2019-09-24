@@ -17,7 +17,7 @@ namespace TutuCanchas.DAO
 
             //Leo los registros de la DB.
             using (SqlDataAdapter da = new SqlDataAdapter(
-                "select CanchasHorarios.Id, CanchasHorarios.IdCancha, CanchasHorarios.HoraDesde, CanchasHorarios.HoraHasta, CanchasHorarios.Dia, CanchasHorarios.Precio, Canchas.IdCanchasTipos, Clubes.IdClubesZonas from CanchasHorarios inner join Canchas ON CanchasHorarios.Id = Canchas.Id inner join CanchasTipos ON Canchas.IdCanchasTipos = CanchasTipos.Id inner join Clubes ON Canchas.IdClub = Clubes.Id " + where,
+                "select CanchasHorarios.Id, CanchasHorarios.IdCancha, CanchasHorarios.HoraDesde, CanchasHorarios.HoraHasta, CanchasHorarios.Dia, CanchasHorarios.Precio, Canchas.IdCanchasTipos, Clubes.IdClubesZonas, Canchas.Nombre AS CanchaNombre, Clubes.Nombre AS ClubNombre, Clubes.Direccion AS ClubDireccion, Clubes.Zona AS ClubZona, CanchasTipos.Nombre AS TipoCancha  from CanchasHorarios inner join Canchas ON CanchasHorarios.Id = Canchas.Id inner join CanchasTipos ON Canchas.IdCanchasTipos = CanchasTipos.Id inner join Clubes ON Canchas.IdClub = Clubes.Id " + where,
                 DAOHelper.connectionString))
             {
                 da.Fill(dt);
@@ -33,6 +33,20 @@ namespace TutuCanchas.DAO
                 canchaHorario.Precio = Convert.ToInt32(dr["Precio"]);
                 canchaHorario.IdCanchasTipos = Convert.ToInt32(dr["IdCanchasTipos"]);
                 canchaHorario.IdClubesZonas = Convert.ToInt32(dr["IdClubesZonas"]);
+                // Todo lo visible 
+                canchaHorario.NombreCancha = Convert.ToString(dr["CanchaNombre"]);
+                canchaHorario.NombreClub = Convert.ToString(dr["ClubNombre"]);
+                canchaHorario.Direccion = Convert.ToString(dr["ClubDireccion"]);
+                canchaHorario.Zona = Convert.ToString(dr["ClubZona"]);
+                canchaHorario.CanchaTipo = Convert.ToString(dr["TipoCancha"]);
+                string displayHoraDesde;
+                if (canchaHorario.HoraDesde.ToString().Length == 3) displayHoraDesde = "0" + canchaHorario.HoraDesde.ToString().Substring(0, 1) + ":" + canchaHorario.HoraDesde.ToString().Substring(1, 2);
+                else displayHoraDesde = canchaHorario.HoraDesde.ToString().Substring(0, 2) + ":" + canchaHorario.HoraDesde.ToString().Substring(2, 2);
+                canchaHorario.displayHoraDesde = displayHoraDesde;
+                string displayHoraHasta;
+                if (canchaHorario.HoraHasta.ToString().Length == 3) displayHoraHasta = "0" + canchaHorario.HoraHasta.ToString().Substring(0, 1) + ":" + canchaHorario.HoraHasta.ToString().Substring(1, 2);
+                else displayHoraHasta = canchaHorario.HoraHasta.ToString().Substring(0, 2) + ":" + canchaHorario.HoraHasta.ToString().Substring(2, 2);
+                canchaHorario.displayHoraHasta = displayHoraHasta;
                 canchas.Add(canchaHorario);
             }
 
@@ -106,39 +120,42 @@ namespace TutuCanchas.DAO
                 where += "Horadesde=" + busqueda.HoraDesde;
                 first = false;
             }
-            if (!first) where = where + " AND ";
             // Tipo de cancha
             if (busqueda.IdCanchasTipos != 0)
             {
+                if (!first) where = where + " AND ";
                 where += "IdCanchasTipos=" +busqueda.IdCanchasTipos;
                 first = false;
             }
-            if (!first) where = where + " AND ";
             // Precio
             // Desde
             if (busqueda.PrecioDesde != 0)
             {
+                if (!first) where = where + " AND ";
                 where += "Precio>=" + busqueda.PrecioDesde;
                 first = false;
             }
-            if (!first) where = where + " AND ";
+            
             // Hasta
             if (busqueda.PrecioHasta != 0)
             {
+                if (!first) where = where + " AND ";
                 where += "Precio<=" + busqueda.PrecioHasta;
                 first = false;
             }
             // Zonas
-            if (!first) where = where + " AND ";
+            
             if (busqueda.IdClubesZonas != 0)
             {
+                if (!first) where = where + " AND ";
                 where += "IdClubesZonas=" + busqueda.IdClubesZonas;
                 first = false;
             }
             // Fecha
-            if (!first) where = where + " AND ";
+            
             if (busqueda.Dia.Date.ToString("dd/MM/yyyy") != "01/01/0001")
             {
+                if (!first) where = where + " AND ";
                 where += "Dia=" + busqueda.Dia.Date.ToString("dd/MM/yyyy");
                 first = false;
             }

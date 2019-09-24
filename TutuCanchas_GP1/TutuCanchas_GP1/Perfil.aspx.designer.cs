@@ -10,7 +10,7 @@
 namespace TutuCanchas_GP1 {
     
     
-    public partial class Buscador {
+    public partial class Perfil {
         
         /// <summary>
         /// Control ftoperfil.
