@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="CanchasHorariosDTO.cs" />
     <Compile Include="Horarios.cs" />
+    <Compile Include="ReservasDTO.cs" />
     <Compile Include="UsuariosDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
