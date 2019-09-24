@@ -16,5 +16,10 @@ namespace TutuCanchas.Business
         {
             return DAO.CanchasHorariosDAO.Filtrar(busqueda);
         }
+
+        public static DTO.CanchasHorariosDTO GetCanchaHorarioByID(int id)
+        {
+            return DAO.CanchasHorariosDAO.GetHorariosById(id);
+        }
     }
 }

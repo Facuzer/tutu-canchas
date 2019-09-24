@@ -55,5 +55,10 @@ namespace TutuCanchas.Business
                 return "No se que paso";
             }
         }
+
+        public static int GetIdByUser(string user)
+        {
+            return DAO.UsuariosDAO.GetIdByUser(user);
+        }
     }
 }

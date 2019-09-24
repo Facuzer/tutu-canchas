@@ -9,7 +9,7 @@ namespace TutuCanchas.DTO
     {
         public int Id { get; set; }
         public int IdCancha { get; set; }
-        // public string FechaHora { get; set; }
+        public DateTime FechaHora { get; set; }
         public int IdUsuario { get; set; }
         public int Precio { get; set; }
         public string Estado { get; set; }

@@ -34,6 +34,16 @@ namespace TutuCanchas_GP1
             int fila = Convert.ToInt32(e.CommandArgument);
 
             int IdCanchaHorario = Convert.ToInt32(gvCanchas.Rows[fila].Cells[0].Text);
+            var canchahorarios = TutuCanchas.Business.CanchasHorarios.GetCanchaHorarioByID(IdCanchaHorario);
+            TutuCanchas.DTO.ReservasDTO reserva = new TutuCanchas.DTO.ReservasDTO();
+            reserva.IdCanchaHorarios = IdCanchaHorario;
+            reserva.FechaHora = canchahorarios.Dia;
+            reserva.IdUsuario = TutuCanchas.Business.Usuarios.GetIdByUser(Convert.ToString(Session["usuario"]));
+            reserva.Precio = canchahorarios.Precio;
+            reserva.Estado = "Reservada";
+            reserva.IdCanchaHorarios = canchahorarios.Id;
+            Session.Add("DatosReserva", reserva);
+            
         }
     }
 }

@@ -57,9 +57,9 @@ namespace TutuCanchas.DAO
             return canchas;
         }
 
-        public static List<CanchasHorariosDTO> GetHorariosByPrecioFijo(int precio)
+        public static CanchasHorariosDTO GetHorariosById(int id)
         {
-            return ReadAll("WHERE Precio=" + precio);
+            return ReadAll("WHERE Id=" + id)[0];
         }
 
         public static List<CanchasHorariosDTO> GetHorariosByPrecio(int precioDesde, int precioHasta)

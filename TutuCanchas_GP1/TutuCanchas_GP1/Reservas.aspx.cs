@@ -11,7 +11,7 @@ namespace TutuCanchas_GP1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TutuCanchas.DTO.ReservasDTO reserva = (TutuCanchas.DTO.ReservasDTO)Session["DatosReserva"];
         }
     }
 }
