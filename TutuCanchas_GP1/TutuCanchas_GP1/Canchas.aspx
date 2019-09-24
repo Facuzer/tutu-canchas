@@ -3,15 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <br />
     <div class="container">
 
         <div class="row">
 
-            <div class="col-md-12" style="width: 100%; text-align: center; top: 0px; left: 0px;">
+            <div class="col-md-12" style="width: 150%; text-align: center; top: 0px; right: 275px;">
 
-                <asp:Gridview ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="500px" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
+                <asp:Gridview ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="150%" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged">
                                 
                     
                     <Columns>

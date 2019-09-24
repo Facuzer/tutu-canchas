@@ -9,49 +9,8 @@
 }
 span{
     display: inline-block;
-    padding: 15px 30px;
+    padding: 5px 5px;
     margin-left: 0px;
     margin-top: 1px;
 }
-#nombre{
-    float:left
 
-}
-#text {
-    width: 1133px;
-    top: 1px;
-    left: 1px;
-    height: 43px;
-}
-#ftoperfil{
-    float:left;
-    margin-top: 0px;
-}
-#box {
-    padding: 10px;
-    margin-top: 10px;
-    font-family: Cooper;
-}
-#box:after{
-    content: ".";
-    visibility:hidden;
-    height:0;
-    clear:both;
-    display:inline-block
-}
-#Label3{
-    left: 20px;
-    margin-left: 1px;
-}
-#email{
-    padding-top: 17px;
-    margin-left: 1px
-}
-#telefono {
-    padding-top: 17px;
-    margin-left: 1px
-}
-#datonombre{
-    padding-top: 50px;
-}
-#contendor
