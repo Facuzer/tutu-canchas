@@ -33,7 +33,7 @@ namespace TutuCanchas.DAO
                 canchaHorario.Precio = Convert.ToInt32(dr["Precio"]);
                 canchaHorario.IdCanchasTipos = Convert.ToInt32(dr["IdCanchasTipos"]);
                 canchaHorario.IdClubesZonas = Convert.ToInt32(dr["IdClubesZonas"]);
-                // Todo lo visible 
+                // Todo lo visible
                 canchaHorario.NombreCancha = Convert.ToString(dr["CanchaNombre"]);
                 canchaHorario.NombreClub = Convert.ToString(dr["ClubNombre"]);
                 canchaHorario.Direccion = Convert.ToString(dr["ClubDireccion"]);
@@ -47,7 +47,9 @@ namespace TutuCanchas.DAO
                 if (canchaHorario.HoraHasta.ToString().Length == 3) displayHoraHasta = "0" + canchaHorario.HoraHasta.ToString().Substring(0, 1) + ":" + canchaHorario.HoraHasta.ToString().Substring(1, 2);
                 else displayHoraHasta = canchaHorario.HoraHasta.ToString().Substring(0, 2) + ":" + canchaHorario.HoraHasta.ToString().Substring(2, 2);
                 canchaHorario.displayHoraHasta = displayHoraHasta;
-                canchas.Add(canchaHorario);
+
+
+                if (ReservasDAO.CanchaHorarioDisponible(canchaHorario.Id)) canchas.Add(canchaHorario);
             }
 
 
@@ -99,7 +101,7 @@ namespace TutuCanchas.DAO
                 {
                     vistahora += item.HoraHasta.ToString();
                 }
-                vistahora = vistahora.Substring(0, 2) + ":" + vistahora.Substring(2,2) + "hs. - " + vistahora.Substring(4, 2) + ":" + vistahora.Substring(4, 2) + "hs.";
+                vistahora = vistahora.Substring(0, 2) + ":" + vistahora.Substring(2,2) + "hs. - " + vistahora.Substring(4, 2) + ":" + vistahora.Substring(6, 2) + "hs.";
                 horarios.Add(new Horarios
                 {
                     Value = item.HoraDesde,
@@ -152,7 +154,6 @@ namespace TutuCanchas.DAO
                 first = false;
             }
             // Fecha
-            
             if (busqueda.Dia.Date.ToString("dd/MM/yyyy") != "01/01/0001")
             {
                 if (!first) where = where + " AND ";
