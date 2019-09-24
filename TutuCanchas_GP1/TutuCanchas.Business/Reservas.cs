@@ -11,5 +11,10 @@ namespace TutuCanchas.Business
         {
             return DAO.ReservasDAO.GetAllReservas(idUsuario);
         }
+
+        public static void AltaReservas(DTO.ReservasDTO reserva)
+        {
+
+        }
     }
 }

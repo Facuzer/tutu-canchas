@@ -47,5 +47,10 @@ namespace TutuCanchas.DAO
         {
             return ReadAll("WHERE IdUsuario=" + idUsuario);
         }
+
+        public static void AltaReserva(DTO.ReservasDTO reserva)
+        {
+            DAOHelper.EjecutarComando("INSERT INTO Reservas(Id,IdCancha,FechaHora,IdUsuario,Precio,Estado,IdCanchasHorarios) VALUES("+ reserva.Id + "," + reserva.IdCancha + ", '" + reserva.FechaHora + "'," + reserva.IdUsuario + "," +  reserva.Precio + ", '" + reserva.Estado + "', " + reserva.IdCanchaHorarios+")");
+        }
     }
 }
