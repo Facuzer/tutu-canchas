@@ -11,27 +11,29 @@ namespace TutuCanchas_GP1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            System.Data.DataTable dt = new System.Data.DataTable("dt");
-            dt.Columns.Add("Nombre");
-            dt.Columns.Add("Direccion");
-            dt.Columns.Add("Cancha");
-            dt.Columns.Add("Horario");
-            dt.Columns.Add("Precio", typeof(decimal));
-
-            dt.Rows.Add("Club San Telmo", "Calle 234", "Futbol 5", "19:00", 1200);
-            dt.Rows.Add("Club San Telmo", "Calle 234", "Futbol 5", "19:00", 1200);
-            dt.Rows.Add("Club San Telmo", "Calle 234", "Futbol 5", "19:00", 1200);
-            dt.Rows.Add("Club San Telmo", "Calle 234", "Futbol 5", "19:00", 1200);
-            dt.Rows.Add("Club San Telmo", "Calle 234", "Futbol 5", "19:00", 1200);
-            
-            gvCanchas.DataSource = dt;
-            gvCanchas.DataBind();
+            if (Session["Busqueda"] == null) Response.Redirect("Buscador.aspx");
+            else
+            {
+                gvCanchas.AutoGenerateColumns = false;
+                gvCanchas.DataSource = Session["Busqueda"];
+                gvCanchas.DataBind();
+            }
         }
 
         protected void gvCanchas_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        protected void gvCanchas_Rowcommand(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void gvCanchas_RowCommand1(object sender, GridViewCommandEventArgs e)
+        {
+            int fila = Convert.ToInt32(e.CommandArgument);
+
+            int IdCanchaHorario = Convert.ToInt32(gvCanchas.Rows[fila].Cells[0].Text);
         }
     }
 }

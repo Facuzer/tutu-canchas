@@ -54,8 +54,13 @@ namespace TutuCanchas_GP1
             busqueda.IdClubesZonas = Convert.ToInt32(ddZonas.SelectedValue);
             busqueda.Dia = Calendar1.SelectedDate;
 
-            Session.Add("Busqueda", TutuCanchas.Business.CanchasHorarios.Filtrar(busqueda));
-            Response.Redirect("Canchas.aspx");
+            var resultado = TutuCanchas.Business.CanchasHorarios.Filtrar(busqueda);
+            if (resultado.Count == 0) Response.Write("<script LANGUAGE='JavaScript' >alert('No se encontraron registros con esos filtros.')</script>");
+            else
+            {
+                Session.Add("Busqueda", resultado);
+                Response.Redirect("Canchas.aspx");
+            } 
         }
     }
 }
