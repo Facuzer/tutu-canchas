@@ -38,7 +38,7 @@ namespace TutuCanchas.DAO
 
         public static bool CanchaHorarioDisponible(int idCanchaHorario)
         {
-            var reservas = ReadAll("WHERE IdCanchasHorarios="+idCanchaHorario + " AND Estado='Reservado'");
+            var reservas = ReadAll("WHERE IdCanchasHorarios="+idCanchaHorario + " AND (Estado='Reservada' OR Estado='reservada')");
             if (reservas.Count != 0) return false;
             else return true;
         }
