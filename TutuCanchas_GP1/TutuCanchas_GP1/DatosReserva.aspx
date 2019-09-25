@@ -14,23 +14,23 @@
 
                 <asp:Label ID="Label1" runat="server" Text="Fecha:" Font-Underline="true"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lblFecha" runat="server" Text="None"></asp:Label>
+                <asp:Label ID="lblFecha" runat="server" Text="None" ForeColor="#12CBC4" Font-Bold="true"></asp:Label>
                 <br />
                 <asp:Label ID="Label2" runat="server" Text="Horario:" Font-Underline="true"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lblHorario" runat="server" Text="None"></asp:Label>
+                <asp:Label ID="lblHorario" runat="server" Text="None" ForeColor="#12CBC4" Font-Bold="true"></asp:Label>
                 <br />
                 <asp:Label ID="Label3" runat="server" Text="Dirección:" Font-Underline="true"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lblDir" runat="server" Text="None"></asp:Label>
+                <asp:Label ID="lblDir" runat="server" Text="None" ForeColor="#12CBC4" Font-Bold="true"></asp:Label>
                 <br />
                 <asp:Label ID="Label4" runat="server" Text="Tipo:" Font-Underline="true"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lblTipo" runat="server" Text="None"></asp:Label>
+                <asp:Label ID="lblTipo" runat="server" Text="None" ForeColor="#12CBC4" Font-Bold="true"></asp:Label>
                 <br />
                 <asp:Label ID="Label5" runat="server" Text="Precio:" Font-Underline="true"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lblPrecio" runat="server" Text="None"></asp:Label>
+                <asp:Label ID="lblPrecio" runat="server" Text="None" ForeColor="#12CBC4" Font-Bold="true"></asp:Label>
                 <br />
                 <br />
 

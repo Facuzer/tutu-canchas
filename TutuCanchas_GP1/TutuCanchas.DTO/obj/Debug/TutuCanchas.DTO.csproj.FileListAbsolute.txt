@@ -40,3 +40,9 @@ C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\bin\Debug\TutuCanch
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.csprojResolveAssemblyReference.cache
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.dll
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.pdb
+C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\bin\Debug\TutuCanchas.DTO.dll
+C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\bin\Debug\TutuCanchas.DTO.pdb
+C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.csprojAssemblyReference.cache
+C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.csproj.CoreCompileInputs.cache
+C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.dll
+C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.pdb

@@ -11,11 +11,42 @@ namespace TutuCanchas_GP1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["DatosReserva"] == null) Response.Redirect("buscador.aspx");
-            else
-            {
-                TutuCanchas.DTO.ReservasDTO reserva = Session["DatosReserva"];
-            }
+            TutuCanchas.DTO.ReservasDTO reservas = (TutuCanchas.DTO.ReservasDTO)Session["DatosReserva"];
+            lblFecha.Text = reservas.FechaHora.Date.ToString("dd/MM/yyyy");
+            lblPrecio.Text = reservas.Precio.ToString();
         }
+        
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+       
+        protected global::System.Web.UI.WebControls.Label lblFecha;
+
+        
+        protected global::System.Web.UI.WebControls.Label Label2;
+
+        
+        protected global::System.Web.UI.WebControls.Label lblHorario;
+
+        
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+       
+        protected global::System.Web.UI.WebControls.Label lblDir;
+
+      
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        protected global::System.Web.UI.WebControls.Label lblTipo;
+
+        
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        
+        protected global::System.Web.UI.WebControls.Label lblPrecio;
+
+        protected global::System.Web.UI.WebControls.Button btnConfirm;
+
+     
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

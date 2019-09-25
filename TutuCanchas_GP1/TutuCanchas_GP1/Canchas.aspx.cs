@@ -43,7 +43,7 @@ namespace TutuCanchas_GP1
             reserva.Estado = "Reservada";
             reserva.IdCanchaHorarios = canchahorarios.Id;
             Session.Add("DatosReserva", reserva);
-            
+            Response.Redirect("DatosReserva.aspx");
         }
     }
 }
