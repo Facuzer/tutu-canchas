@@ -45,12 +45,12 @@ namespace TutuCanchas.DAO
 
         public static List<DTO.ReservasDTO> GetAllReservas(int idUsuario)
         {
-            return ReadAll("WHERE IdUsuario=" + idUsuario);
+            return ReadAll("WHERE IdUsuario=" + idUsuario + " AND Estado='Reservada'");
         }
 
         public static void AltaReserva(DTO.ReservasDTO reserva)
         {
-            DAOHelper.EjecutarComando("INSERT INTO Reservas(Id,IdCancha,FechaHora,IdUsuario,Precio,Estado,IdCanchasHorarios) VALUES("+ reserva.Id + "," + reserva.IdCancha + ", '" + reserva.FechaHora + "'," + reserva.IdUsuario + "," +  reserva.Precio + ", '" + reserva.Estado + "', " + reserva.IdCanchaHorarios+")");
+            DAOHelper.EjecutarComando("INSERT INTO Reservas(Id,IdCancha,FechaHora,IdUsuario,Precio,Estado,IdCanchasHorarios) VALUES("+ DAOHelper.GetNextId("Reservas") + "," + reserva.IdCancha + ", '" + reserva.FechaHora + "'," + reserva.IdUsuario + "," +  reserva.Precio + ", '" + reserva.Estado + "', " + reserva.IdCanchaHorarios+")");
         }
     }
 }
