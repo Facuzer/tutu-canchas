@@ -50,7 +50,12 @@ namespace TutuCanchas.DAO
 
         public static void AltaReserva(DTO.ReservasDTO reserva)
         {
+<<<<<<< HEAD
             DAOHelper.EjecutarComando("INSERT INTO Reservas(Id,IdCancha,FechaHora,IdUsuario,Precio,Estado,IdCanchasHorarios) VALUES("+ DAOHelper.GetNextId("Reservas") + "," + reserva.IdCancha + ", '" + reserva.FechaHora + "'," + reserva.IdUsuario + "," +  reserva.Precio + ", '" + reserva.Estado + "', " + reserva.IdCanchaHorarios+")");
+=======
+            reserva.IdCancha = DAO.CanchasHorariosDAO.GetHorariosById(reserva.IdCanchaHorarios).IdCancha;
+            DAOHelper.EjecutarComando("INSERT INTO Reservas(Id,IdCancha,FechaHora,IdUsuario,Precio,Estado,IdCanchasHorarios) VALUES("+ DAOHelper.GetNextId("Reservas") + "," + reserva.IdCancha + ", '" + reserva.FechaHora.ToString("yyyy-MM-dd HH:mm:ss") + "'," + reserva.IdUsuario + "," +  reserva.Precio + ", '" + reserva.Estado + "', " + reserva.IdCanchaHorarios+")");
+>>>>>>> b53ec6288998343b876050432c910e8119d58e08
         }
     }
 }

@@ -45,7 +45,7 @@
                     <DynamicMenuStyle BackColor="#E3EAEB" />
                     <DynamicSelectedStyle BackColor="#1C5E55" />
                     <Items>
-                        <asp:MenuItem Text="Mis Reservas" Value="Mis Reservas" NavigateUrl="~/Reserva.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mis Reservas" Value="Mis Reservas" NavigateUrl="~/Reservas.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Buscador" Value="Buscador" NavigateUrl="~/Buscador.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Cerrar Sesion" Value="Cerrar Sesion" NavigateUrl="~/Login.aspx"></asp:MenuItem>
                     </Items>
