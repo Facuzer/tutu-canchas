@@ -23,13 +23,13 @@ namespace TutuCanchas_GP1
         protected void btnConfirm_Click(object sender, EventArgs e)
         {
             TutuCanchas.Business.Reservas.AltaReservas(reservas);
-            Response.Write("<script LANGUAGE='JavaScript' >alert('Cancha reservada con exito :).')</script>");
-            Response.Redirect("Buscador.aspx");
+            Response.Redirect("Reservas.aspx");
         }
 
         protected void btnBack_Click(object sender, EventArgs e)
         {
-
+            Session["DatosReserva"] = null;
+            Response.Redirect("Buscador.aspx");
         }
     }
 }
