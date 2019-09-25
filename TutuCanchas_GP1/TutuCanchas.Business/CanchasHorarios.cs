@@ -21,5 +21,25 @@ namespace TutuCanchas.Business
         {
             return DAO.CanchasHorariosDAO.GetHorariosById(id);
         }
+
+        public static string GetDireccionById(int id)
+        {
+            return DAO.CanchasHorariosDAO.GetHorariosById(id).Direccion;
+        }
+
+        public static string GetTipoCanchaById(int id)
+        {
+            return DAO.CanchasHorariosDAO.GetHorariosById(id).CanchaTipo;
+        }
+
+        public static List<string> GetHorariosById(int id)
+        {
+            List<string> horarios = new List<string>();
+            var canchahorarios = DAO.CanchasHorariosDAO.GetHorariosById(id);
+            string horadesde = canchahorarios.displayHoraDesde, horahasta = canchahorarios.displayHoraHasta;
+            horarios.Add(horadesde);
+            horarios.Add(horahasta);
+            return horarios;
+        }
     }
 }
