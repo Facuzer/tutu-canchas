@@ -26,10 +26,15 @@ namespace TutuCanchas_GP1
         }
         protected void gvCanchas_Rowcommand(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void gvCanchas_RowCommand1(object sender, GridViewCommandEventArgs e)
+        {
+           
+        }
+
+        protected void gvCanchas_RowCommand2(object sender, GridViewCommandEventArgs e)
         {
             int fila = Convert.ToInt32(e.CommandArgument);
 
@@ -41,7 +46,6 @@ namespace TutuCanchas_GP1
             reserva.IdUsuario = TutuCanchas.Business.Usuarios.GetIdByUser(Convert.ToString(Session["usuario"]));
             reserva.Precio = canchahorarios.Precio;
             reserva.Estado = "Reservada";
-            reserva.IdCanchaHorarios = canchahorarios.Id;
             Session.Add("DatosReserva", reserva);
             Response.Redirect("DatosReserva.aspx");
         }

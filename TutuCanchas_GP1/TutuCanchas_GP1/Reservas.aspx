@@ -6,13 +6,13 @@
         <div class="container">
             <br />
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="col-md-12" style="width: 100%; text-align: center; top: 0px;">
-                        <asp:GridView ID="gvReservas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="332px" OnSelectedIndexChanged="gvReservas_SelectedIndexChanged">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-12" style="width: 100%; text-align: center; right: 275px;">
+                        <asp:GridView ID="gvReservas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="150%" OnSelectedIndexChanged="gvReservas_SelectedIndexChanged">
                             
                         <Columns>
-                            <asp:ButtonField ButtonType="Button" HeaderText="Elegir" Text="Detalles"  />
-                                </Columns>
+                            <asp:ButtonField ButtonType="Button" HeaderText="Elegir" Text="Detalles" />
+                        </Columns>
                             
                         <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
                         <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />

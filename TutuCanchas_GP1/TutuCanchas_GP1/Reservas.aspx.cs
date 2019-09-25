@@ -11,7 +11,15 @@ namespace TutuCanchas_GP1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TutuCanchas.DTO.ReservasDTO reserva = (TutuCanchas.DTO.ReservasDTO)Session["DatosReserva"];
+            var reservas = TutuCanchas.Business.Reservas.GetAllReservas(TutuCanchas.Business.Usuarios.GetIdByUser(Session["usuario"].ToString()));
+
+            gvReservas.DataSource = reservas;
+            gvReservas.DataBind();
+        }
+
+        protected void gvReservas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

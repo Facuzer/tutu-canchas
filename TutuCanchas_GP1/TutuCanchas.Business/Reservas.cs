@@ -7,6 +7,7 @@ namespace TutuCanchas.Business
 {
     public static class Reservas
     {
+        
         public static List<DTO.ReservasDTO> GetAllReservas(int idUsuario)
         {
             return DAO.ReservasDAO.GetAllReservas(idUsuario);
@@ -14,7 +15,9 @@ namespace TutuCanchas.Business
 
         public static void AltaReservas(DTO.ReservasDTO reserva)
         {
-
+            DAO.ReservasDAO.AltaReserva(reserva);
+            
+           
         }
 
         

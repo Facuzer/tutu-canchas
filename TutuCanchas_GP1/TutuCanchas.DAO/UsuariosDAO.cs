@@ -65,7 +65,7 @@ namespace TutuCanchas.DAO
 
         public static int GetIdByUser(string user)
         {
-            return ReadAll("WHERE Nombre=" + user)[0].Id;
+            return ReadAll("WHERE Nombre = '" + user + "'")[0].Id;
         }
     }
 }

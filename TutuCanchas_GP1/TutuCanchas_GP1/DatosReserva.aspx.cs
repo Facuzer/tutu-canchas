@@ -9,44 +9,27 @@ namespace TutuCanchas_GP1
 {
     public partial class DatosReserva : System.Web.UI.Page
     {
+        TutuCanchas.DTO.ReservasDTO reservas = new TutuCanchas.DTO.ReservasDTO();
         protected void Page_Load(object sender, EventArgs e)
         {
-            TutuCanchas.DTO.ReservasDTO reservas = (TutuCanchas.DTO.ReservasDTO)Session["DatosReserva"];
+            reservas = (TutuCanchas.DTO.ReservasDTO)Session["DatosReserva"];
             lblFecha.Text = reservas.FechaHora.Date.ToString("dd/MM/yyyy");
             lblPrecio.Text = reservas.Precio.ToString();
+            lblDir.Text = TutuCanchas.Business.CanchasHorarios.GetDireccionById(reservas.IdCanchaHorarios);
+            lblTipo.Text = TutuCanchas.Business.CanchasHorarios.GetTipoCanchaById(reservas.IdCanchaHorarios);
+            lblHorario.Text = TutuCanchas.Business.CanchasHorarios.GetHorariosById(reservas.IdCanchaHorarios)[0] + "-" + TutuCanchas.Business.CanchasHorarios.GetHorariosById(reservas.IdCanchaHorarios)[1];
         }
-        
-        protected global::System.Web.UI.WebControls.Label Label1;
 
-       
-        protected global::System.Web.UI.WebControls.Label lblFecha;
+        protected void btnConfirm_Click(object sender, EventArgs e)
+        {
+            TutuCanchas.Business.Reservas.AltaReservas(reservas);
+            Response.Write("<script LANGUAGE='JavaScript' >alert('Cancha reservada con exito :).')</script>");
+            Response.Redirect("Buscador.aspx");
+        }
 
-        
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
 
-        
-        protected global::System.Web.UI.WebControls.Label lblHorario;
-
-        
-        protected global::System.Web.UI.WebControls.Label Label3;
-
-       
-        protected global::System.Web.UI.WebControls.Label lblDir;
-
-      
-        protected global::System.Web.UI.WebControls.Label Label4;
-
-        protected global::System.Web.UI.WebControls.Label lblTipo;
-
-        
-        protected global::System.Web.UI.WebControls.Label Label5;
-
-        
-        protected global::System.Web.UI.WebControls.Label lblPrecio;
-
-        protected global::System.Web.UI.WebControls.Button btnConfirm;
-
-     
-        protected global::System.Web.UI.WebControls.Button btnBack;
+        }
     }
 }

@@ -10,7 +10,7 @@
 namespace TutuCanchas_GP1 {
     
     
-    public partial class DatosReservas {
+    public partial class DatosReserva {
         
         /// <summary>
         /// Control Label1.
