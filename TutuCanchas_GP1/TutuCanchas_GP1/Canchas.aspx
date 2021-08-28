@@ -8,9 +8,9 @@
 
         <div class="row">
 
-            <div class="col-md-12" style="width: 150%; text-align: center; top: 0px; right: 275px;">
+            <div class="col-md-12" style="width: 100%; text-align: center; top: 0px; ">
 
-                <asp:Gridview ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="150%" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged" OnRowCommand="gvCanchas_RowCommand2">
+                <asp:Gridview ID="gvCanchas" runat="server" CellPadding="4" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" Width="100%" OnSelectedIndexChanged="gvCanchas_SelectedIndexChanged" OnRowCommand="gvCanchas_RowCommand2">
                                 
                     
                     <Columns>

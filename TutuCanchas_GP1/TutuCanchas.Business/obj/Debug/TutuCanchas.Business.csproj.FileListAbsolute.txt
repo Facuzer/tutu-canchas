@@ -87,3 +87,12 @@ C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\Tutu
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DAO.pdb
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DTO.pdb
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.Business.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.Business.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DAO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DTO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DAO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\bin\Debug\TutuCanchas.DTO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.csprojResolveAssemblyReference.cache
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.Business\obj\Debug\TutuCanchas.Business.pdb

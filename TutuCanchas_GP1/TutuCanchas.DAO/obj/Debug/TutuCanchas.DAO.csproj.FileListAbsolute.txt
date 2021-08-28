@@ -69,3 +69,10 @@ C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanch
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.csprojResolveAssemblyReference.cache
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.dll
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DAO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DAO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DTO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\bin\Debug\TutuCanchas.DTO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.csprojResolveAssemblyReference.cache
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DAO\obj\Debug\TutuCanchas.DAO.pdb

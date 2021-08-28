@@ -46,3 +46,8 @@ C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\ob
 C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.csproj.CoreCompileInputs.cache
 C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.dll
 C:\Users\facun\Desktop\Vallarino\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\bin\Debug\TutuCanchas.DTO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\bin\Debug\TutuCanchas.DTO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.csprojResolveAssemblyReference.cache
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas.DTO\obj\Debug\TutuCanchas.DTO.pdb

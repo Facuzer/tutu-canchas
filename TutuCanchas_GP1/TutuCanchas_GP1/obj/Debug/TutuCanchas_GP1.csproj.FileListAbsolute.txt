@@ -104,3 +104,15 @@ C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.Bus
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.DTO.pdb
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.DAO.pdb
 C:\Users\huergo\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\obj\Debug\TutuCanchas_GP1.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas_GP1.dll.config
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas_GP1.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas_GP1.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.Business.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.DTO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.DAO.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.Business.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.DTO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\bin\TutuCanchas.DAO.pdb
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\obj\Debug\TutuCanchas_GP1.csprojResolveAssemblyReference.cache
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\obj\Debug\TutuCanchas_GP1.dll
+E:\tutu-canchas\TutuCanchas_GP1\TutuCanchas_GP1\obj\Debug\TutuCanchas_GP1.pdb
